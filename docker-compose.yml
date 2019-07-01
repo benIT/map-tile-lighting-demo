@@ -1,0 +1,16 @@
+version: "3"
+services:
+  web:
+    image: benit/debian-web:php7.1
+    environment:
+      - http_proxy
+      - https_proxy
+      - HTTP_PROXY
+      - HTTPS_PROXY
+      - no_proxy
+      - APACHE_RUN_USER=www-data
+      - APACHE_RUN_GROUP=www-data
+    container_name: web
+    working_dir: /var/www/html
+    volumes:
+      - ./:/var/www/html
