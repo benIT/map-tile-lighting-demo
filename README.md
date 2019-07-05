@@ -61,4 +61,11 @@ Demos scripts can be launched with [`npm run` script](https://docs.npmjs.com/cli
     [0003] 0ms           0B GET    200 /load-image-demo.js (generated)
 
 
-Open up your browser at the given @IP eg `http://192.168.48.2:9966` and enjoy the demo!    
+Open up your browser at the given @IP eg `http://192.168.48.2:9966` and enjoy the demo!
+
+### with docker
+
+    docker-compose up -d
+    docker exec -ti nodejs bash
+    npm install
+    npm run satellite
